@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<head>
+    <title>Functions</title>
+</head>
+<body>
+    <script>
+
+// 1
+
+function maxInt(a, b) {
+  return a > b ? a : b;
+}
+
+
+// 2
+
+function incrementIfEqual(a, b) {
+  return a === b ? a + 1 : a;
+}
+
+// 3
+
+function findSmallerValue(a, b, c, d) {
+  return [a, b, c, d].every(num => num < 1 || num > 5) ? Math.min(a, b, c, d) : -1;
+}
+
+// 4
+
+function checkEvenOrNot(num) {
+  return num % 2 === 0 ? "even" : "not even";
+}
+
+
+// 5
+
+function compareNumbers(a, b, c, d) {
+  return a === b && b === c && c === d
+    ? "all equals"
+    : a === b || a === c || a === d || b === c || b === d || c === d
+    ? "only 2 numbers are equals"
+    : "all numbers not equals";
+}
+
+// 6
+
+function getDayOfWeek(num) {
+  return num === 1 ? "Sunday" :
+         num === 2 ? "Monday" :
+         num === 3 ? "Tuesday" :
+         num === 4 ? "Wednesday" :
+         num === 5 ? "Thursday" :
+         num === 6 ? "Friday" :
+         num === 7 ? "Saturday" :
+         "Error";
+}
+
+// 7
+
+function getDaysInMonth(monthNumber) {
+  return monthNumber === 2
+    ? 28
+    : (monthNumber === 4 || monthNumber === 6 || monthNumber === 9 || monthNumber === 11)
+    ? 30
+    : (monthNumber >= 1 && monthNumber <= 12)
+    ? 31
+    : -1;
+}
+
+// 8
+
+
+const globalVar = 10;
+
+function glob() {
+    console.log(globalVar);
+}
+
+
+// 9
+
+function calcMul(a, b) {
+    let result = a * b;
+    console.log("The sum is:", result);
+}
+
+
+
+    </script>
+</body>
+</html>
